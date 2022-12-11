@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+a{
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
+ul li:nth-child(even){
+    background-color: white;
+}
+ul li:nth-child(odd){
+    background-color: grey;
+}
+ul li  ul li:nth-child(even){
+    background-color:gray;
+}
+ul li  ul li:nth-child(odd){
+    background-color: white;
+}
+ol li:nth-child(3){
+    cursor: pointer;
+}
+ol li:nth-child(5){
+    cursor: pointer;
+}
+ol li:nth-child(4){
+    background-color: lightsteelblue;
+}
+.row {
+    display: flex;
+    flex: 1;
+    gap: 2px 2px;
+}
+@media (min-width: 993px) {
+   .list1, .list2 {
+     width: 1;
+   }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+   .row{
+    flex-direction: column;
+   } 
+}
+@media (max-width: 768px) {
+    .row{
+        flex-direction: column;
+       } 
+}

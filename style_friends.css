@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+a{
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
+th{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+tr td:nth-child(odd){
+    background-color: darkgray;
+}
+table, th, td, caption {
+  border:1px solid black;
+  text-align: center;
+}
+tr td:nth-child(5){
+    text-align: right;
+}
+@media (min-width: 993px) {
+    th {
+        font-size: 130%;
+    }
+    td {
+        font-size: 120%;
+    }
+ }
+ @media (min-width: 769px) and (max-width: 992px) {
+    th {
+        font-size: 120%;
+    }
+    td {
+        font-size: 110%;
+    }
+ }
+ @media (max-width: 768px) {
+    th {
+        font-size: 110%;
+    }
+ }

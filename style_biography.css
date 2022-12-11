@@ -1,0 +1,105 @@
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+a{
+    font-style: italic;
+}
+h3{
+    text-align: center;
+}
+section a{
+   font-style: normal;
+   background-color: blue;
+   color:orange;
+   display: block;
+   width: 150px;
+   margin-bottom: 2px;
+}
+section a:hover{
+    background-color: magenta;
+    color: yellow
+}
+section a:active{
+ background-color: yellow;
+ color: magenta;
+}
+p{
+    font-size: 120%;
+}
+h2{
+    font-size: 140%;
+}
+.a1 {
+    background-color: rgb(179, 245, 245);
+}
+.cl1{
+    color: rgb(255, 90, 90);
+}
+.a2 {
+    background-color: rgb(108, 146, 235);
+}
+.cl2{
+    color: rgb(254, 89, 67);
+}
+.a3{
+    background-color: rgb(78, 78, 255);
+    
+}
+.cl3{ 
+    color: rgb(255, 133, 85);
+}
+.a4 {
+    background-color: rgb(81, 0, 255);
+}
+.cl4{
+    color: rgb(255, 197, 60);
+}
+.a5{
+    background-color: rgb(76, 0, 255);
+}
+.cl5{ 
+    color: rgb(255, 241, 85);
+}
+article a{
+    font-style: normal;
+    font-weight: 700;
+}
+article {
+    max-width: 100%;
+    border: 1px solid black;
+    display: block;
+    padding: 5px;
+}
+.text {
+    display: flex;
+    gap: 10px 10px;
+    flex: 1;
+}
+@media (min-width: 993px) {
+    .text{
+        flex-wrap: wrap;
+    }
+    .a1, .a2, .a3 {
+       flex: 1 300px;
+    }
+    .a4, .a5 {
+        flex: 2 300px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .text{
+        flex-wrap: wrap;
+    }
+    .a1, .a2, .a3, .a4 {
+       flex: 1 300px;
+    }
+    .a5 {
+        flex: 2 300px;
+    }
+}
+@media (max-width: 768px) {
+    .text{
+        flex-flow: column;
+    }
+}
